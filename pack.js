@@ -151,7 +151,7 @@ function getTargetDependency(ast, name) {
     });
     return targetDependency;
 }
-resolveDependencies("./src/a.js", "fn");
+console.log(resolveDependencies("./src/a.js", "s"));
 function getAst(path) {
     var code = fs.readFileSync(path, "utf8");
     var ast = parser_1.parse(code, {
